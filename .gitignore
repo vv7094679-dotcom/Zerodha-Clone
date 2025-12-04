@@ -1,0 +1,30 @@
+# Node / JS
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+
+# Build outputs
+build/
+dist/
+.cache/
+
+# Monorepo subfolders
+Zerodha-main/**/node_modules/
+Zerodha-main/**/build/
+Zerodha-main/**/dist/
+Zerodha-main/**/.env
+
+# Environment & local config
+.env
+.env.*
+.DS_Store
+.vscode/
+.idea/
+
+# Coverage
+coverage/
+
+# Trae IDE metadata
+.trae/

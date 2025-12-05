@@ -244,3 +244,11 @@ app.listen(PORT, () => {
       console.log("DB connection failed", err && err.message ? err.message : err);
     });
 });
+
+app.get("/health", (req, res) => {
+  res.json({
+    app: "ok",
+    db: mongoose.connection.readyState === 1 ? "connected" : "disconnected"
+  });
+});
+

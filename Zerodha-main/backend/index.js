@@ -249,6 +249,6 @@ app.get("/health", (req, res) => {
   res.json({
     app: "ok",
     db: mongoose.connection.readyState === 1 ? "connected" : "disconnected"
-  });
 });
+
 
